@@ -18,7 +18,7 @@ int main() {
     while (WindowShouldClose() == false) {
 
         // Event Handling
-        if (IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
+        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
             Vector2 mouse_position = GetMousePosition();
             int row = mouse_position.y / CELL_SIZE;
             int col = mouse_position.x / CELL_SIZE;
